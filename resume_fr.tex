@@ -1,0 +1,106 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvtheme[blue]{classic} 
+% CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+% CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+% \usepackage{fontspec}
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+%\nopagenumbers{} % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% \usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{lmodern}
+\usepackage[french]{babel}
+\usepackage{etoolbox}
+\usepackage{enumitem}
+
+%\usepackage[scale=1.2]{geometry} % Reduce document margins
+\usepackage[top=1cm, bottom=1cm, left=1cm, right=1cm]{geometry}
+
+% Largeur de la colonne pour les dates
+\setlength{\hintscolumnwidth}{3.4cm}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\name{Thibaut}{\textbf{Roy}}
+
+% \title{Senior Software Engineer}
+\address{12 Rue des Mimosas}{86550 Mignaloux-Beauvoir}{France}
+\email{thibaut.royhelion@gmail.com}
+% \homepage{www.thibaut-roy.fr}%{www.thibaut-roy.fr} 
+\social[linkedin][linkedin.com/in/thibautroy]{linkedin.com/in/thibautroy}
+\phone[mobile (FR)]{+33 7 83 34 34 42}
+%\extrainfo{Driving license}
+%\photo[65pt][0.4pt]{pictures/idpic.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the CV title
+\vspace*{-10mm}
+
+%\textbf{Objectif :} Obtenir un contrat d’apprentissage de 3 ans pour la formation par alternance d’Ingénieur Informatique de l'Université de Technologie de Compiègne (UTC).
+
+%\cventry{years}{degree/job title}{institution/employer}{localization}{optional: grade/...}{optional: comment/job description}
+
+\section{Experience}
+\cventry{Sep 2018 - Jul 2026}{Ingénieur Logiciel Senior}{Canva}{Sydney (Australia)}{}
+{\begin{itemize}
+    \item Refonte du frontend de Marketplace sur la stack 2.0 de Canva (TypeScript, React, MobX), au service de plus de 100M de templates et d'éléments.
+    \item Lancement de Photos Unlimited, un abonnement de type "Netflix" donnant accès illimité à la banque de photos de Canva, atteignant plus d'1M\$ d'ARR (par la suite intégré à Canva Pro).
+    \item Conception technique du programme Canva Creators, permettant à des milliers de designers de contribuer à la bibliothèque de templates de Canva via des outils de publication, profils créateurs et tableaux de bord ; promu Senior Engineer sur la base de ce travail.
+    \item Pilotage de la mise en conformité de failles d'accessibilité critiques avant l'échéance de l'European Accessibility Act, protégeant 19,3M\$ d'ARR exposés à un risque contractuel d'abandon. Mise en place de tests automatisés d'accessibilité.
+    \item Contributeur clé de "Wonder Box", la surface de recherche et de génération par IA de Canva lancée lors du Canva World Tour 2025 dans un délai serré — générant +7,2\% d'abonnements Pro, +22\% d'engagement IA et +0,4\% de rétention.
+    \item Animation de la session d'onboarding sur l'architecture frontend pour les nouveaux ingénieurs, aidant les nouvelles recrues à devenir rapidement familier avec la codebase frontend de Canva.
+    \item Rédaction d'articles dans le handbook d'ingénierie de l'entreprise sur des sujets frontend (architecture, outils de gestion d'état, accessibilité) ainsi que sur les processus de design doc (RFC).
+    \item Conduite de plus de 90 entretiens techniques pour des postes d'ingénieur logiciel frontend.
+\end{itemize}}
+\cventry{Sep 2015--Aug 2018}{Apprenti Ingénieur Logiciel}{Amadeus}{Sophia Antipolis (France)}{}
+{\begin{itemize}
+    \item Design et développement d'un module de sélection de siège dans un train (Agular, Redux, SVG)
+    \item Implémentation de nouveaux Web Services (XML, C++, Python)
+    \item Contribution au projet open-source ng-bootstrap (Angular, Bootstrap, Web Accessibility, Karma, TDD)
+    \item Création d'une application web de ventes de tickets de trains (Angular, Redux, Java, Swagger)
+\end{itemize}}
+\cventry{Apr--Aug 2015}{Développeur Android -- Stage}{FabZat}{Bordeaux (France)}{}
+{Maintenance du plugin Android, développement de nouvelles fonctionnalités}
+\cventry{Apr--Jun 2014}{Développeur de solutions 3D -- Stage}{Intelligent Mechatronics and RFID (IMaR)}{Tralee (Ireland)}{}
+{\begin{itemize}
+    \item Etudes de faisabilité, tests de différents logiciels et algorithmes pour lire, filtrer et transformer des nuages de points en modèles 3D, réalisation de scripts Python
+    \item Développement de logiciel de visualisation de modèles 3D sur le web (Potree.JS, WebGL) et en réalité augmentée sur Android (Java, Vuforia SDK)
+\end{itemize}}
+
+\section{Education}
+%\cventry{}{}{}{}{}{}
+\cventry{2015--2018}{Diplôme d'Ingénieur Logiciel}{Université de Technologie de Compiègne (UTC)}{}{}{}
+\cventry{2014--2015}{Licence Informatique}{Université de La Rochelle}{}{}{}
+\cventry{2012--2014}{DUT Informatique}{IUT de La Rochelle}{}{}{}
+%\cventry{2009 -- 2012}{H.S. diploma with second-class honours}{LP2I}{Jaunay-Clan, France}{}{}
+
+%\section{Projects \& Achievements}
+%\cventry{November 2017}{Hackathon Website \& Dashboard}{UTC}{}{}{}
+%\cventry{November 2016}{Innovation prize}{Hackathon UTC -- IoT edition}{}{}
+%{Created a connected flower with an Arduino, and a web app to track your flower statistics, and to compare it and fight with your friends' plants. (Arduino, MEAN stack)}
+%\cventry{May 2015}{Reverse polish notation calculator}{UTC}{(C++, Qt)}{}{}
+%\cventry{Feb 2015}{Cross platform ubiquitary treasure hunt game}{Titanium}{University of La Rochelle}{}{}
+
+\section{Skills}
+\cvdoubleitem{Languages}{\textbf{TS, JS, Java}}{Frameworks}{\textbf{React, MobX, Spring, AWS}}
+\cvdoubleitem{DB}{\textbf{MySQL, PostgreSQL, MongoDB}}{Autres}{\textbf{Protobuf, REST, SOAP}}
+\cvitem{Tools}{\textbf{VS Code, Git, IntelliJ, Visual Studio, Atlassian Suite, Figma, UML}}
+\cvitem{Languages}{\textbf{French (native), English (fluent, TOEIC: 975/990, IELTS: 8.0/9 (C1))}}
+
+\section{Divers}
+\cvitem{Intérêts}{Travel, Café, Sci-Fi, Photographie avec drône}
+\cvitem{Sports}{Musculation, Course à pied, Tennis, Ski}
+%\cvitem{Clubs \& Societies}{Pic'Asso (Students' bar) -- ApprenTeam (Promotion of apprenticeships)}
+
+\end{document}

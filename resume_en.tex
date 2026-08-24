@@ -1,0 +1,106 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvtheme[blue]{classic} 
+% CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+% CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+% \usepackage{fontspec}
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+%\nopagenumbers{} % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% \usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{lmodern}
+\usepackage[french]{babel}
+\usepackage{etoolbox}
+\usepackage{enumitem}
+
+%\usepackage[scale=1.2]{geometry} % Reduce document margins
+\usepackage[top=1cm, bottom=1cm, left=1cm, right=1cm]{geometry}
+
+% Largeur de la colonne pour les dates
+\setlength{\hintscolumnwidth}{3.4cm}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\name{Thibaut}{\textbf{Roy}}
+
+% \title{Senior Software Engineer}
+\address{29/35-37 Ocean St N}{Bondi NSW 2026}{Australia}
+\email{thibaut.royhelion@gmail.com}
+% \homepage{www.thibaut-roy.fr}%{www.thibaut-roy.fr} 
+\social[linkedin][linkedin.com/in/thibautroy]{linkedin.com/in/thibautroy}
+\phone[mobile (FR)]{+33 7 83 34 34 42}
+\phone[mobile (AU)]{+61 476 467 396}
+%\extrainfo{Driving license}
+%\photo[65pt][0.4pt]{pictures/idpic.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the CV title
+\vspace*{-10mm}
+
+%\textbf{Objectif :} Obtenir un contrat d’apprentissage de 3 ans pour la formation par alternance d’Ingénieur Informatique de l'Université de Technologie de Compiègne (UTC).
+
+%\cventry{years}{degree/job title}{institution/employer}{localization}{optional: grade/...}{optional: comment/job description}
+
+\section{Experience}
+\cventry{Sep 2018 - Jul 2026}{Senior Software Engineer}{Canva}{Sydney (Australia)}{}
+{\begin{itemize}
+    \item Rebuilt the Marketplace frontend on Canva's 2.0 stack (TypeScript, React, MobX), serving 100M+ templates and elements.
+    \item Launched Photos Unlimited, a first-of-its-kind Netflix-style subscription giving users unlimited access to Canva's stock photo library, reaching \$1M+ ARR (later merged into Canva Pro).
+    \item Founding engineer and lead on the Canva Creators template program, empowering thousands of designers to contribute to Canva's template library through templates publishing tools, creator profiles and dashboards; promoted to Senior Engineer on the strength of this work.
+    \item Led remediation of critical accessibility gaps ahead of the European Accessibility Act deadline, protecting \$19.3M in ARR exposed to contractual abandonment. Introduced automated testing of a11y.
+    \item Core contributor to “Wonder Box”, Canva's AI-powered search and generation surface launched at Canva World Tour 2025 under a hard deadline — driving +7.2\% Pro subscriptions, +22\% AI engagement and +0.4\% retention.
+    \item Ran the frontend architecture onboarding session for new engineers, helping newbies understand Canva’s frontend codebase.
+    \item Authored articles in the company-wide engineering handbook on frontend topics (architecture, state-management tools, accessibility), and design doc (RFC) processes.
+    \item Conducted 90+ technical interviews for frontend software engineering roles.
+\end{itemize}}
+\cventry{Sep 2015--Aug 2018}{Software Engineer -- Apprentice}{Amadeus}{Sophia Antipolis (France)}{}
+{\begin{itemize}
+    \item Developed a seat selection module for a B2B rail ticket selling platform  -- Angular, Python, C++
+    \item Contributed to the ng-bootstrap open source project, focusing on accessibility -- Angular, Bootstrap, WCAG 2.0, Karma
+    \item Designed and developed a B2C web application to sell rail tickets -- Angular, Redux, Java, Swagger
+\end{itemize}}
+\cventry{Apr--Aug 2015}{Android Developer -- Intern}{FabZat}{Bordeaux (France)}{}
+{Maintained and developed new features for an in-app merchandising shop Android plugin -- Java}
+\cventry{Apr--Jun 2014}{3D Solutions Developer -- Intern}{Intelligent Mechatronics and RFID (IMaR)}{Tralee (Ireland)}{}
+{\begin{itemize}
+    \item Wrote scripts to parse, filter and transform LiDAR data to 3D models -- Python
+    \item Built web and augmented reality visualization solutions -- Potree, Android, Vuforia
+\end{itemize}}
+
+\section{Education}
+%\cventry{}{}{}{}{}{}
+\cventry{2015--2018}{Master's degree in Software Engineering}{University of Technology of Compiègne (UTC)}{}{}{}
+\cventry{2014--2015}{Bachelor's degree in Computer Science}{University of La Rochelle}{}{}{}
+\cventry{2012--2014}{Advanced Diploma in Computer Science}{IUT of La Rochelle}{}{}{}
+%\cventry{2009 -- 2012}{H.S. diploma with second-class honours}{LP2I}{Jaunay-Clan, France}{}{}
+
+%\section{Projects \& Achievements}
+%\cventry{November 2017}{Hackathon Website \& Dashboard}{UTC}{}{}{}
+%\cventry{November 2016}{Innovation prize}{Hackathon UTC -- IoT edition}{}{}
+%{Created a connected flower with an Arduino, and a web app to track your flower statistics, and to compare it and fight with your friends' plants. (Arduino, MEAN stack)}
+%\cventry{May 2015}{Reverse polish notation calculator}{UTC}{(C++, Qt)}{}{}
+%\cventry{Feb 2015}{Cross platform ubiquitary treasure hunt game}{Titanium}{University of La Rochelle}{}{}
+
+\section{Skills}
+\cvdoubleitem{Languages}{\textbf{TS, JS, Java}}{Frameworks}{\textbf{React, MobX, Spring, AWS}}
+\cvdoubleitem{DB}{\textbf{MySQL, PostgreSQL, MongoDB}}{Other}{\textbf{Protobuf, REST, SOAP}}
+\cvitem{Tools}{\textbf{VS Code, Git, IntelliJ, Visual Studio, Atlassian Suite, Figma, UML}}
+\cvitem{Languages}{\textbf{French (native), English (fluent, TOEIC: 975/990, IELTS: 8.0/9 (C1))}}
+
+\section{Misc}
+\cvitem{Interests}{Travel, Coffee, Sci-Fi, Drone photography}
+\cvitem{Sports}{Strength training, Running, Tennis, Skiing}
+%\cvitem{Clubs \& Societies}{Pic'Asso (Students' bar) -- ApprenTeam (Promotion of apprenticeships)}
+
+\end{document}
